@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Percentage in JS</title>
+    <link rel="stylesheet" href="BOOTSTRAPE/bootstrap-4.0.0-dist/css/bootstrap.css">
+</head>
+<body>
+    <form action=""></form>
+   <label for="">Total No. of Items</label> 
+   <br>
+   <input type="text" onchange="Fruit();" name="Total Items" id="items">
+   <br>
+   <label for="">Price</label>
+   <br>
+   <input type="text" onchange="Fruit();" name="Price" id="Price">
+   <br>
+   <label for="">Discount</label>
+   <br>
+   <input type="text" onchange="Fruit();" name="Discount" id="Discount">
+   <br>
+   <label for="">Result</label>
+   <br>
+   <input type="text" onchange="Fruit();" name="Result" id="Result">
+   <br>
+   <br>
+   <label for="">Total No. of Items</label> 
+   <br>
+   <input type="text" onchange="Fruit();" name="Total Items" id="items_1">
+   <br>
+   <label for="">Price</label>
+   <br>
+   <input type="text" onchange="Fruit();" name="Price" id="Price_1">
+   <br>
+   <label for="">Discount</label>
+   <br>
+   <input type="text" onchange="Fruit();" name="Discount" id="Discount_1">
+   <br>
+   <label for="">Result</label>
+   <br>
+   <input type="text" onchange="Fruit();" name="Result" id="Result_1">
+   <br>
+   <br>
+   <br>
+   <label for="#">Total_Discount</label>
+   <br>
+   <input type="text" name="" id="Total_Discount">
+   <br>
+   <label for="#">Total_price</label>
+   <br>
+   <input type="text" name="" id="Total">
+   <br>
+</form>
+</body>
+</html>
+<script>
+function Fruit(){
+    items =Number (document.getElementById("items").value);
+    Price =Number (document.getElementById("Price").value);
+    Discount = (items*Price)*10/100;
+    document.getElementById("Discount").value = Discount;
+    Result = (items*Price)-Discount;
+    document.getElementById("Result").value = Result;
+
+    items_1 =Number (document.getElementById("items_1").value);
+    Price_1 =Number (document.getElementById("Price_1").value);
+    Discount_1 = (items_1*Price_1)*10/100;
+    document.getElementById("Discount_1").value = Discount_1;
+    Result_1 = (items_1*Price_1)-Discount_1;
+    document.getElementById("Result_1").value = Result_1;
+
+    Total_Discount = Discount+Discount_1;
+    document.getElementById("Total_Discount").value = Discount+Discount_1;
+
+    Result_2=Result+Result_1;
+    document.getElementById("Total").value = Result_2;
+}
+</script>

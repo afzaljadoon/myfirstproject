@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zakat_Calcualtor in JS</title>
+    <link rel="stylesheet" href="BOOTSTRAPE/bootstrap-4.0.0-dist/css/bootstrap.css">
+</head>
+<body>
+    <h1>Zakat_Calcualtor</h1>
+    <form action="#">
+        <label for="#">Total_price</label>
+        <br>
+        <input type="text" onchange="red_fun();" name="Total_price" id="Total_price">
+        <br>
+        <label for="#">Zakat in Total Price</label>
+        <br>
+        <input type="text" onchange="red_fun();" name="Zakat" id="Zakat">
+    </form>
+</body>
+</html>
+<script>
+function red_fun(){
+    Total_price =Number (document.getElementById("Total_price").value);
+    Zakat = Total_price*2.5/100;
+    document.getElementById("Zakat").value = Total_price*2.5/100;
+}
+</script>

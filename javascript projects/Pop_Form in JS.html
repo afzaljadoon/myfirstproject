@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pop_Form</title>
+    <link rel="stylesheet" href="BOOTSTRAPE/bootstrap-4.0.0-dist/css/bootstrap.css">
+</head>
+<style>
+.login_form{
+    display: none;
+}
+</style>
+<body>
+   <h1>Dynamic Form</h1> 
+   <button onclick="fun();" class="btn btn-primary">Add File</button>
+   <div class="container">
+       <div class="row">
+           <div class="col col-6">
+            <form action="#" class="login_form" id="pop_form">
+            <label for="#">Name</label>
+            <input type="text" required name="" id="" class="form-control">
+            <br>
+            <label for="#">Age</label>
+            <input type="text" required name="" id="" class="form-control">
+            <br>
+            <label for="#">Father Name</label>
+            <input type="text" required name="" id="" class="form-control">
+            <br>
+            <button class="btn btn-primary">Submit</button>
+            <button onclick="clo();" class="btn btn-danger">Close</button>
+            </form>   
+           </div>
+       </div>
+   </div>
+</body>
+</html>
+<script>
+    function fun(){
+     document.getElementById("pop_form").style.display='block';
+    }
+    function clo(){
+        document.getElementById("pop_form").style.display='none';
+    }
+</script>

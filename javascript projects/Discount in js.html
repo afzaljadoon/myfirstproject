@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="#">No of item</label>
+    <br>
+    <input type="text" name="Product" onchange="Fun()" id="Product">
+    <br>
+    <label for="#">item Price</label>
+    <br>
+    <input type="text" name="price" onchange="Fun()" id="price">
+    <br>
+    <label for="#">Result</label>
+    <br>
+    <input type="text" name="Result" onchange="Fun()" id="Result">
+    <br>
+    <label for="#">Discount</label>
+    <br>
+    <input type="text" name="discount" onchange="Fun()" id="discount">
+    <br>
+    <label for="#">Total Price</label>
+    <br>
+    <input type="text" name="total_price" onchange="Fun()" id="total_price">
+</body>
+</html>
+<script>
+    function Fun(){
+        Product =Number (document.getElementById("Product").value);
+
+        price =Number (document.getElementById("price").value);
+
+        Result = (Product * price); 
+        document.getElementById("Result").value = Result;
+
+        discount = (Result * 15/100);
+        document.getElementById("discount").value = discount;
+
+        total_price = (Result - discount);
+        document.getElementById("total_price").value = total_price;
+    }
+</script>

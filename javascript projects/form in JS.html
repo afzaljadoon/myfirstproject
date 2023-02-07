@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form in JS</title>
+    <link rel="stylesheet" href="BOOTSTRAPE/bootstrap-4.0.0-dist/css/bootstrap.css">
+</head>
+<style>
+    .login{
+        display: none;
+        border: solid 5px black;
+        border-radius: 10px;
+        padding: 10px;
+        margin-top: 10px;
+    }
+    #width{
+        width: 10%;
+    }
+</style>
+<body>
+    <button id="width" onclick="sho();" class="col col-6 offset-5  btn btn-primary">Show Form</button>
+    <br>
+    <div class="container">
+    <div class="row">
+        <div class="col col-12">
+            
+            <form action="#" class="login" id="show_file">
+                <label for="">Total No. of Items</label> 
+             
+                <input type="text" onchange="Fruit();" class="form-control"  name="Total Items" id="items">
+                <br>
+                <label for="">Price</label>
+               
+                <input type="text" onchange="Fruit();" class="form-control" name="Price" id="Price">
+                <br>
+                <label for="">Discount</label>
+         
+                <input type="text" onchange="Fruit();" class="form-control" name="Discount" id="Discount">
+                <br>
+                <label for="">Result</label>
+               
+                <input type="text" onchange="Fruit();" class="form-control" name="Result" id="Result">
+                <br>
+                <br>
+                <label for="">Total No. of Items</label> 
+                
+                <input type="text" onchange="Fruit();" class="form-control" name="Total Items" id="items_1">
+                <br>
+                <label for="">Price</label>
+               
+                <input type="text" onchange="Fruit();" class="form-control" name="Price" id="Price_1">
+                <br>
+                <label for="">Discount</label>
+              
+                <input type="text" onchange="Fruit();" class="form-control" name="Discount" id="Discount_1">
+                <br>
+                <label for="">Result</label>
+                <input type="text" onchange="Fruit();" class="form-control" name="Result" id="Result_1">
+                <br>
+                <br>
+                <label for="#">Total_Discount</label>
+                 <br>
+                <input type="text" name="" id="Total_Discount" class="form-control">
+                <br>
+                <label for="#">Total_Price</label>
+                <input type="text" onchange="Fruit();" class="form-control" name="" id="Total">
+                <br>
+                <button class="btn btn-success">Submit</button>
+                <button onclick="shu();" class="btn btn-danger">Close</button>
+            </form>
+        </div>
+   
+</div>
+</div>
+</body>
+</html>
+<script>
+  function sho(){
+     document.getElementById("show_file").style.display='block';
+    }
+    function shu(){
+        document.getElementById("show_file").style.display='none';
+    }
+    
+    function Fruit(){
+    items =Number (document.getElementById("items").value);
+    Price =Number (document.getElementById("Price").value);
+    Discount = (items*Price)*10/100;
+    document.getElementById("Discount").value = Discount;
+    Result = (items*Price)-Discount;
+    document.getElementById("Result").value = Result;
+
+    items_1 =Number (document.getElementById("items_1").value);
+    Price_1 =Number (document.getElementById("Price_1").value);
+    Discount_1 = (items_1*Price_1)*10/100;
+    document.getElementById("Discount_1").value = Discount_1;
+    Result_1 = (items_1*Price_1)-Discount_1;
+    document.getElementById("Result_1").value = Result_1;
+
+    Total_Discount = Discount+Discount_1;
+    document.getElementById("Total_Discount").value = Discount+Discount_1;
+
+    Result_2=Result+Result_1;
+    document.getElementById("Total").value = Result_2 ;
+    }
+</script>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Api for git users</title>
+</head>
+<body>
+    <button onclick="loadData()">Load</button>
+    <ul id="doc"></ul>
+    <script>
+        const loadData = () => {
+       
+            fetch('https://api.github.com/users')
+            .then((res) => res.json())
+            .then(json => {
+                const data = document.getElementById('doc').innerHTML = json;
+                console.log(data.id);
+            
+            })
+                
+            // document.getElementById('doc').appendChild(li);
+ }
+    </script>
+</body>
+</html>

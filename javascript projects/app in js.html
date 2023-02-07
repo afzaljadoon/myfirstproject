@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>java script basics</h1>
+</body>
+</html>
+<script>
+  
+
+    // Number the maths object
+
+    // val = Math.sqrt(64);
+    // val = Math.PI;
+    // val = Math.round(2.5);
+    // val = Math.abs(-20);
+    // val = Math.min(55,50,60,70,4,8,1,30,40,25,45,56);
+    // val = Math.max(55,50,60,70,4,8,1,30,40,25,45,56);
+    // val = Math.floor(2.8);
+    // val = Math.ceil(2.3);
+    // val = Math.random();
+    // val = Math.floor(Math.random() *20 +1 );
+
+    // console.log(val);
+
+      // simple math with numbers
+    //   const num1= 150;
+    // const num2 = 60;
+    // let val;
+
+    // val = num1 + num2;
+    // val = num1 * num2;
+    // val = num1 - num2;
+    // val = num1 / num2;
+    // val = num1 % num2;
+
+    // console.log(val);
+
+    // console to log
+    // console.log('Hello');
+    // console.log(true);
+    // console.log(123);
+    // console.log([1,2,3,4]);
+    // console.log({a:1,b:2});
+    // var greeting='Hello';
+    // console.log(greeting);
+    // console.error('This is an error');
+    // console.warn('This is a warning');
+    // console.table({a:1,b:2});
+    // console.clear();
+
+    // var,let,const
+
+    // var name = 'smith';
+    // console.log(name);
+    // name = 'jhon';
+    // console.log(name);
+
+    // name = 'bard';
+    // console.log(name);
+
+    // name = 'greeting';
+    // console.log(name);
+
+    //  let name;
+    //  name = 'smith';
+    //  console.log(name);
+    //  name = 'jhon';
+    //  console.log(name);
+
+    // const person={
+    //     name : 'sara',
+    //     age : 32
+    // }
+    // person.name = 'saba';
+    // person.age = 35;
+    // console.log(person);
+
+    // const numbers = [1,2,3,4,5]
+    // numbers.push(6,7);
+    // console.log(numbers);
+
+
+    // let firstName = camel case;
+    // let first_name = underscore case;
+    // let FirstName = pascal case;
+
+
+    // PRIMITIVE DATA TYPES
+    // string
+    // const name = 'jawad';
+
+    // // number
+    // const age = 45;
+
+    // // boolean
+    // const haskids = true;
+
+    // // null
+    // const sub = null;
+
+    // // undefined
+    // let test;
+
+    // // symbol
+    // const sym = Symbol();
+
+    // // reference types objects
+    // // arrays
+    // const hobbies = ['watch','cricket'];
+
+    // // literal object
+    // const address = {
+    //     city:'washington',
+    //     country:'MA'
+    // }
+    //  const today = new Date();
+
+    // console.log(today)
+    // console.log(typeof today);
+
+    // let val;
+    // // Number to string
+    // val = String(555);
+    // val = String(4+4);
+
+    // // boolean to string
+    // val = String(true);
+
+    // // array to string
+    // val = String([1,2,3,4,5]);
+
+    // // Date to string
+    // val = String(new Date());
+
+    // // To string method
+    // val = (5).toString();
+    // val = (true).toString();
+
+    // // string to number
+
+    // val = Number('5');
+    // val = Number('true');
+    // val = Number('false');
+    // val = Number('null');
+
+    // val = Number('hello');
+    // val = Number([1,2,3,4]);
+
+    // val = parseInt('100.30');
+    // val = parseFloat('100.50');
+
+
+    // console.log(val);
+    // console.log(typeof val);
+    // // console.log(val.length);
+    // console.log(val.toFixed());
+
+
+    // const val1 = String(5);
+    // const val2 = 6;
+
+    // sum = val1 + val2;
+
+    // console.log(sum);
+    // console.log(typeof sum)
+
+
+    // const firstName = 'william';
+    // const lastName = 'porterfield';
+    // const age = 30;
+    // const str = 'Hello there my name is ali';
+    // const tags = 'web design,web development,programming';
+
+    // let val;
+    // val = firstName+lastName;
+
+    // // concatenation
+
+    // val = firstName+' '+lastName;
+
+    // // append
+    // val = 'Brad';
+    // val += 'Haddin';
+
+    // val = 'my name is '+firstName+' and my age is '+age;
+
+    // // Escaping
+    // val = 'That\'s awesome you are look\'ing so good';
+
+    // //Length
+    // val = firstName.length; 
+
+    // // concate()
+    // val = firstName.concat(' ',lastName);
+
+    // // case changing 
+    // val = firstName.toUpperCase();
+    // val = firstName.toLowerCase();
+
+    // val = firstName['4'];
+
+    // // indexof()
+    // val = firstName.indexOf('a');
+    // val = firstName.lastIndexOf('m');
+
+
+    // //  charAt()
+    //  val = firstName.charAt('4');
+
+    // //  Get last char
+    // val = firstName.charAt(firstName.length-1);
+
+    // // Substring
+    // val = firstName.substring(0,5);
+    // // slice
+    // val = firstName.slice(0,6);
+    // val = firstName.slice(-3);
+
+    // // split 
+    // val = str.split(' ');
+    // val = tags.split(',');
+
+    // // replace
+    // val = str.replace('ali','ahmad');
+
+    // // includes
+    // val = str.includes('ali');
+
+    // console.log(val);
+
+
+    // const name = 'jadoon';
+    // const age = '27';
+    // const job = 'web developer';
+    // const city = 'lahore';
+    // let html;
+
+    // // without template string
+    //  html = '<ul> <li>name:' + name + '</li><li>age:' + age + '</li><li>job:' + job + '</li><li>city:' + city + '</li> </ul>'
+
+    //  html = '<ul>' +
+    //    ' <li>name:' + name + '</li>' +
+    //    ' <li>age:' + age + '</li>' +
+    //    ' <li>job:' + job + '</li>' +
+    //    ' <li>city:' + city + '</li>' 
+    //    '</ul>';
+
+    //    function hello(){
+    //        return 'hello';
+    //    }
+
+    // // with template strings
+    // html = `
+    // <ul>
+    //     <li>name:${name}</li>
+    //     <li>age:${age}</li>
+    //     <li>job:${job}</li>
+    //     <li>city:${city}</li>
+    //     <li>${2+2}</li>
+    //     <li>${hello()}</li>
+    //     <li>${age > 26 ? 'over 26':'under 26'}</li>
+    // </ul> `
+
+    //  document.body.innerHTML=html;
+
+    // Creating arrays
+    // const numbers = [20,35,59,24,30,10];
+    // const numbers2 = new Array(5,7,75,45,33,21,15,43);
+    // const fruit = ['apple','orange','banana','pear'];
+    // const mixed = ['apple',25,true,undefined,null,{a:1,b:2},new Date()];
+
+    // let val;
+    
+    // length of array
+    // val = numbers.length;
+    // // check if is array
+    // val = Array.isArray(numbers);
+    // //Get single value
+    // val = numbers[3];
+    // val = numbers[0];
+
+    // // insert into array
+    // numbers[2] = 100;
+
+    // // find index of number
+    // val = numbers.indexOf(10);
+
+    // // Mutating
+    // // adding to end
+    // val = numbers.push(120);
+
+    // // adding to front 
+    // val = numbers.unshift(149);
+
+    // // take off from the end
+    // val = numbers.pop();
+
+    // // take off from the front
+    // val = numbers.shift();
+
+    // // splice
+    // val = numbers.splice(1,3);
+
+    // // reverse
+    //  val = numbers.reverse();
+
+    // //  concatenate array
+    // val = numbers.concat(numbers2);
+
+    // // sorting
+    // val = fruit.sort();
+    // val = numbers.sort();
+
+    //   use the compare function
+    // val = numbers.sort(function(x,y) {
+    //     return x-y;
+    // });
+
+    // reverse sorting
+    // val = numbers.sort(function(x,y){
+    //     return y-x;
+    // });
+
+    // find
+    // function under50(num) {
+    //     return num <50;
+    // }
+    
+    // val = numbers.find(under50);
+
+    // function over50(num){
+    //     return num > 50;
+    // }
+
+    // val = numbers.find(over50);
+
+    // console.log(val);
+    // console.log(numbers);
+
+    // const person = {
+    //     firstname:'steve',
+    //     lastname:'smith',
+    //     age:35,
+    //     email:'steve@gmail.com',
+    //     hobbies:['music','sports'],
+    //     address:{
+    //         city:'Miami',
+    //         state:'FL'
+    //     },
+    //     getbirthYear: function(){
+    //         return 2017-this.age;
+    //     }
+    // }
+    // let val;
+    // val = person;
+
+    // // Get specific value
+    // val = person.firstname;
+    // val = person['lastname'];
+    // val = person.age;
+    // val = person.hobbies[1];
+    // val = person.address.city;
+    // val = person.address['state'];
+    // val = person.getbirthYear();
+
+
+    // console.log(val);
+
+    // const people =[
+    //     {name:'john', age:25},
+    //     {name:'mike', age:30},
+    //     {name:'nancy', age:23}
+    // ];
+    // for(let i=0; i<people.length; i++){
+    //  console.log(people[i].name );
+    // }
+
+    // Date 
+    // let val;
+
+    //  const today = new Date();
+    //  let birthday = new Date('04-04-2000 11:25:00');
+    //  birthday = new Date('04/04/2000 11:25:00');
+    //  birthday = new Date('april 04 2002 11:25:00')
+
+    // val = birthday;
+
+    // val = today.getDate();
+    // val = today.getDay();
+    // val = today.getHours();
+    // val = today.getFullYear();
+    // val = today.getMinutes();
+    // val = today.getSeconds();
+    // val = today.getMilliseconds();
+    // val = today.getTime();
+    // val = today.getMonth();
+
+    //      birthday.setDate(2);
+    //      birthday.setMonth(6);
+    //      birthday.setFullYear(2002);
+    //      birthday.setMinutes(20);
+    
+      //     console.log(birthday);
+       
+    //   if(something){
+    //       do something
+    //   }else{
+    //       else do something else
+    //   }
+
+    // EQUAL TO
+    
+    // const id = 100;
+
+    // if(id==100){
+    //  console.log('correct');
+    // }else{
+    //     console.log('incorrect');
+    // }
+
+    //       //   NOT EQUAL TO
+    //       if(id!=100){
+    //         console.log('correct');
+    // }else{
+    //     console.log('incorrect');
+    //       }
+
+    //     // EQUAL TO VALUE AND TYPE
+    //     if(id===100){
+    //  console.log('correct');
+    // }else{
+    //     console.log('incorrect');
+    // }
+
+    //           //NOT EQUAL TO VALUE AND TYPE
+    //           if(id!==100){
+    //         console.log('correct');
+    // }else{
+    //     console.log('incorrect');
+    //       }
+    
+    // TEST IF TYPE OF ID
+    // if(typeof id !== 'undefined'){
+    //     console.log(`id is ${id}`);
+    // }else{
+    //     console.log('no id');
+    // }
+
+    // GREATER OR LESS THAN
+    // if(id >= 100){
+    //     console.log('correct');
+    // }else{
+    //     console.log('incorrect');
+    // }
+
+    // IF ELSE
+    // const color= 'black';
+
+    // if(color === 'red'){
+    //     console.log('color is red');
+    // }else if(color=== 'yellow'){
+    //     console.log('color is yellow');
+    // }
+    // else{
+    //     console.log('color is blue')
+    // }
+        // AND &&
+        // const name = 'smith';
+        // const age = 12;
+        // if(age > 0 && age <12){
+        //     console.log(`${name} is child`);
+        // }else if(age >12 && age < 19){
+        //     console.log(`${name} is teenager`);
+        // }else{
+        //     console.log(`${name} is adult`);
+        // }
+        
+        // // OR ||
+        // if(age < 16 || age > 65){
+        //     console.log(`${name} can not run in the race`);
+        // }else{
+        //     console.log(`${name} is regestered for race`);
+        // }
+
+        // // TERNARY OPERATOR
+        // const id = 100;
+        // console.log(id === 100 ? 'id is correct' : 'id is incorrect');
+
+        // // WITHOUT BRACES
+        // if(id === 100)
+        //  console.log('id is correct');
+        //  else
+        //  ('id is incorrect');
+
+
+        // SWITCHES
+        // const color = 'black';
+        // switch(color){
+        //  case 'red':
+        //  console.log('color is red');
+        //  break;
+        //  case 'blue':
+        //  console.log('color is blue');
+        //  break;
+        //  default:
+        //  console.log('color is not red or blue');
+        //  break;
+        // }
+
+        // let day;
+
+        // switch(new Date().getDay()){
+        //     case 0:
+        //         day = 'Sunday';
+        //         break;
+        //         case 1:
+        //         day = 'Monday';
+        //         break;
+        //         case 2:
+        //         day = 'Tuesday';
+        //         break;
+        //         case 3:
+        //         day = 'Wednesday';
+        //         break;
+        //         case 4:
+        //         day = 'Thursday';
+        //         break;
+        //         case 5:
+        //         day = 'Friday';
+        //         break;
+        //         case 6:
+        //         day = 'Saturday';
+        //         break;
+        // }
+        // console.log(`Today is ${day}`);
+
+        // FOR LOOP
+        // for(let i=0; i<10; i++){
+        //   if(i===3){
+        //     console.log('3 is My Favorite Number');
+        //     continue;
+        //   }
+        //   if(i===5){
+        //     console.log('stop the loop');
+        //     break;
+        //   }
+        //   console.log(i +' ' + 'Number');
+        // }
+    
+        // WHILE LOOP
+        // let i=0;
+        // while(i<10){
+        //   console.log(i);
+        //   i++;
+        // }
+
+        // DO WHILE LOOP
+        // let i=100;
+        // do{
+        //   console.log(i);
+        //   i++;
+        // }
+        // while(i<10);
+
+
+        // ALERT
+        // alert('HelloWorld');
+        // // PROMPT
+        // let input = prompt('Hello');
+        // console.log(input);
+
+        // // CONFIRM
+        // if(confirm('Are You Sure')){
+        //  console.log('YES');
+        // }
+        // else{
+        //   console.log('NO');
+        // }
+
+        // // OUTER HEIGHT AND WIDTH
+        // let val;
+         
+        // val = window.outerHeight;
+        // val = window.outerWidth;
+
+        // // INNER HEIGHT AND WIDTH
+
+        // val = window.innerHeight;
+        // val = window.innerWidth;
+
+        // // window location
+        // val = window.location;
+        // val = window.location.hostname;
+        // val = window.location.href;
+        // val = window.location.port;
+
+        // // Navigator object
+        // val = window.navigator;
+        // val = window.navigator.appName;
+        // val = window.navigator.appVersion;
+        // val = window.navigator.userAgent;
+        // val = window.navigator.platform;
+        // val = window.navigator.vendor;
+        // val = window.navigator.language;
+
+        // console.log(val);
+
+        // Global scope
+        var a = 1;
+        let b = 2;
+        const c = 3;
+
+        // function test(){
+        //   var a = 4;
+        // let b = 5;
+        // const c = 6;
+        // console.log('Function scope :' , a, b, c);
+        // }
+        // test();
+
+        // if (true){
+        //   var a = 4;
+        //  let b = 5;
+        //  const c = 6;
+        //  console.log('IF scope :', a, b, c);
+        // }
+        
+        for(var a=0; a < 10; a++){
+         
+         console.log(`Loop : ${a}`);
+        }
+        console.log('Global scope :' ,a, b, c);
+ </script>

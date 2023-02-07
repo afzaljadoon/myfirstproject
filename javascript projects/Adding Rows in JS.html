@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adding Rows</title>
+    <link rel="stylesheet" href="BOOTSTRAPE/bootstrap-4.0.0-dist/css/bootstrap.css">
+</head>
+<body>
+   <div class="container">
+     <div class="row">
+         <div class="col">
+             <table class="table">
+                 <tr>
+                     <th>S.No</th>
+                     <th>Name</th>
+                     <th>Father Name</th>
+                     <th>Gender</th>
+                     <th>Sports</th>
+                     
+                     <th>Natioinality</th>
+                     <th>Submission</th>
+                 </tr>
+                 <tbody id="tbody">
+
+                 </tbody>
+             </table>
+             <button class="btn btn-info" onclick="addfunction();">Add</button>
+         </div>
+     </div>
+   </div>
+</body>
+</html>
+<script>
+     var counter=0;
+    function addfunction()
+    {
+        if(counter<=9)
+  
+    {
+        
+        counter=counter+1;
+        var html="<tr>";
+            html+=counter;
+            html+="<td><input type='text'></td>";
+            html+="<td><input type='text'></td>";
+            html+="<td><select><option>Male</option><option>Female</option></select></td>"
+            html+="<td>Cricket<input type='radio' name='gender'>Football<input type='radio' name='gender'></td>"
+           
+            html+="<td>Pakistani<input type='checkbox' name='gender'>Others<input type='checkbox' name='gender'></td>"
+            html+="<td><button class='btn btn-primary'>Edit</button> <button class='btn btn-danger'>Delete</button></td>"
+            html+="</tr>";
+            document.getElementById("tbody").insertRow().innerHTML=html;
+    }
+}
+</script>

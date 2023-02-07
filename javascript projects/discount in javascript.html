@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discount</title>
+    <link rel="stylesheet" href="BOOTSTRAPE/bootstrap-4.0.0-dist/css/bootstrap.css">
+    <style>
+        form{
+            text-align: center;
+            font-size: 100%;
+           
+        }
+        .label label{
+            
+            color: black;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+            </style>
+</head>
+<body>
+    <form class="label" action="#">
+     <label for="">No. of item</label>
+     <br>
+     <input type="text" onchange="Discount();" name="item" id="item">
+     <br>
+     <label for="">Item Price</label>
+     <br>
+     <input type="text" onchange="Discount();" name="Price" id="Price">
+     <br>
+     <label for="">Result</label>
+     <br>
+     <input type="text" onchange="Discount();" name="Result" id="Result">
+     <br>
+     <label for="">Discount</label>
+     <br>
+     <input type="text" onchange="Discount();" name="Discount_1" id="Discount_1">
+     <br> 
+     <label for="">Total Price</label>
+     <br>
+     <input type="text" name="Total Price" id="Total_Price"> 
+    </form>
+</body>
+</html>
+<script>
+    function Discount(){
+        item =Number (document.getElementById("item").value);
+        // alert(item)
+        Price =Number (document.getElementById("Price").value);
+        Result = (item*Price);
+        document.getElementById("Result").value = Result;
+        Discount_1= (Result*20/100);
+        document.getElementById("Discount_1").value = Discount_1;
+        //  alert(Discount_1) 
+        Total_Price=(Result-Discount_1);
+        document.getElementById("Total_Price").value = Total_Price;
+    }
+</script>

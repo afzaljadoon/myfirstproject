@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "name": "Micheal clark",
+        "company": "123 Designs",
+        "phone": "444-555-6666"
+        },
+            {
+            "id": 2,
+            "name": "Steve Smith",
+            "company": "Traversy Media",
+            "phone": "222-555-4444"
+            },
+                {
+                "id": 3,
+                "name": "Aaron Finch",
+                "company": "Emirates Flight",
+                "phone": "111-222-3333"
+                }
+]

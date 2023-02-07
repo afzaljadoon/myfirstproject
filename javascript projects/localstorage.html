@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Map</title>
+</head>
+<body>
+    <div id="address"></div>
+    <iframe id="map" src="//maps.google.com/maps?q=34.0000,71.4757&z=14&output=embed" ></iframe>
+
+    <script>
+        navigator.geolocation.getCurrentPosition((position) => {
+            const lat = position.coords.latitude;
+            const long = position.coords.longitude;
+        })
+    </script>
+     <!-- <script>
+        // const person = {
+        //     id : 1,
+        //     name : "Afzal",
+        //     age : 20,
+        //     city : "Swabi"
+        // }
+
+        // const str = JSON.stringify(person);
+        // localStorage.setItem("person",str);
+
+        // const person2 = JSON.parse(localStorage.getItem("person"));
+        // console.log(person2)
+        //  navigator.geolocation.getCurrentPosition((position) => {
+        //     const lat = position.coords.latitude;
+        //     const long = position.coords.longitude;
+        //  })
+        
+
+        // Navigation
+        // navigator.geolocation.getCurrentPosition((position) => {
+        //     const lat = position.coords.latitude;
+        //     const long = position.coords.longitude;
+            
+            // fetch(`https://us1.locationiq.com/v1/reverse.php?key=pk.2ce05a50d1ca31e503b2a60e82d6a395&lat=${lat}&lon=${long}&format=json`)
+            //             .then((res) => res.json())
+            //             .then(json => {
+            //             // const h = document.createElement('h3');
+            //             // h.innerHTML = json;
+            //             // const h3 = document.getElementById('address').appendChild(h);
+            //             console.log(json.address.town);
+
+            //             // const h3 = document.getElementById('address').appendChild(h);
+            //             // console.log(h3)
+
+            //             })
+        // })
+
+     </script> -->
+</body>
+</html>

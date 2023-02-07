@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="">First Number</label><br>
+    <input type="text" id="sub1"><br>
+    <label for="">Second Number</label><br>
+    <input type="text" id="sub2"><br>
+    <label for="">Result</label><br>
+    <input type="text" id="di"><br><br>
+    <button id="btn2" onclick="add()">Addition</button>
+    <button id="btn2" onclick="sub()">Subtraction</button>
+    <button id="btn2" onclick="mul()">Multiplicaton</button>
+    <button id="btn2" onclick="div()">Division</button>
+</body>
+</html>
+<script>
+    function add(){
+        sub1=Number(document.getElementById("sub1").value);
+        sub2=Number(document.getElementById("sub2").value);
+        di=(sub1+sub2);
+        document.getElementById("di").value = di;
+    }
+    function sub(){
+        sub1=Number(document.getElementById("sub1").value);
+        sub2=Number(document.getElementById("sub2").value);
+        di=(sub1-sub2);
+        document.getElementById("di").value = di;
+    }
+    function mul(){
+        sub1=Number(document.getElementById("sub1").value);
+        sub2=Number(document.getElementById("sub2").value);
+        di=(sub1*sub2);
+        document.getElementById("di").value = di;
+    }
+    function div(){
+        sub1=Number(document.getElementById("sub1").value);
+        sub2=Number(document.getElementById("sub2").value);
+        di=(sub1/sub2);
+        document.getElementById("di").value = di;
+    }
+</script>

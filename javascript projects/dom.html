@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+</head>
+<body>
+    <button onclick="domChange()">Click</button>
+    <h1 id="head1">This is a heading</h1>
+    <img src="../img/GYM2.JPG" alt="gym" id="img1" width="100" height="100">
+
+    <form id="f1">
+        <label>Username</label><input type="username" name="username" id="username">
+        <label>Password</label><input type="password" name="password" id="password">
+        
+    </form>
+    <p id="para" style="color: red;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam perspiciatis adipisci, accusantium sed nesciunt porro est vitae ipsum dolor blanditiis enim delectus amet odit, corrupti nisi atque eaque deleniti. Natus unde nesciunt obcaecati harum, possimus placeat neque eveniet voluptatum consequatur impedit, nam ducimus laborum officia quas veniam nemo, sunt ex?</p>
+
+    <p id="para1" style="color: green;" onclick="paraFunc(this)">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam perspiciatis adipisci, accusantium sed nesciunt porro est vitae ipsum dolor blanditiis enim delectus amet odit, corrupti nisi atque eaque deleniti. Natus unde nesciunt obcaecati harum, possimus placeat neque eveniet voluptatum consequatur impedit, nam ducimus laborum officia quas veniam nemo, sunt ex?</p>
+
+    <p id="para2" style="color: red;" onclick="paraFunc(this)">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam perspiciatis adipisci, accusantium sed nesciunt porro est vitae ipsum dolor blanditiis enim delectus amet odit, corrupti nisi atque eaque deleniti. Natus unde nesciunt obcaecati harum, possimus placeat neque eveniet voluptatum consequatur impedit, nam ducimus laborum officia quas veniam nemo, sunt ex?</p>
+     
+    <div id="news"></div>
+    <ul id="items">
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+    </ul>
+
+    <h2 id="head2">Heading 1</h2>
+
+    <script>
+     const domChange = () => {
+
+        const h2 = document.getElementById("head2");
+        h2.setAttribute('class', 'heading')
+        // Difference between innertext and innerHTML is that innerHTML read simple html also but innerText can't read it.
+        // Changing inner text of tags
+        // document.getElementById("head1").innerHTML = "This is Pakistan baby";
+        const t = document.getElementById("head1").innerHTML.toUpperCase();
+        const cap = t.toUpperCase();
+        document.getElementById("head1").innerHTML = cap;
+
+        // Changing attributes of tags
+         document.getElementById("img1").width = "200";
+         document.getElementById("img1").height = "200";
+
+        // Dom Other Method
+        const username = document.forms["f1"]["username"].value;
+        const password = document.forms["f1"]["password"].value;
+        console.log(username, password)
+
+        // Changing style
+        // in dom those attributes which are multiwords we can`t put dash(-) in between instead we use camel case.eg-> fontSize,etc
+        document.getElementById("para").style.color = "white";
+        document.getElementById("para").style.backgroundColor = "green";  
+
+        // Creating element in dom
+        const p = document.createElement("p");
+        p.id = "abc";
+        p.innerHTML = "This is a new heading";
+        document.body.appendChild(p);
+
+        const div = document.getElementById("news");
+        div.appendChild(p);
+
+        const li = document.createElement("li");
+        li.textContent = "New item";
+        document.getElementById("items").appendChild(li);
+     }
+     const paraFunc = (para) => {
+        if(para.id === "para1"){
+            console.log(para1)
+        }
+        else{
+            console.log(para2)
+        }
+     }
+    
+    </script>
+</body>
+</html>
